@@ -28,6 +28,64 @@
     ================================================== -->
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <link rel="icon" href="favicon.png" type="image/x-icon">
+    <style>
+.button {
+  border-radius: 4px;
+  background-color: Transparent;
+  border: 1px solid black;
+  border-color: #f26522;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: auto;
+  height: 25px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  top:-24px;
+}
+
+.button span:after {
+
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover{
+  background-color: #f26522;
+  border-color: #f26522;
+}
+.button:hover after{
+  background-color: Transparent;
+  border-color: #f26522;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+</style>
+<script>
+function openWin() {
+  window.open("https://drive.google.com/file/d/13dyelAOkp45xp5_DJ-imEaPQS_uD7qH_/view?usp=sharing");
+}
+</script>
 
 </head>
 
@@ -59,7 +117,7 @@
                 <ul class="header-nav">
                     <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
                     <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
-                    <li><a class="smoothscroll"  href="#services" title="services">Services</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="services">Skills</a></li>
                     <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
                     <li><a class="smoothscroll"  href="#contact" title="contact">Contact</a></li>
                 </ul>
@@ -88,17 +146,14 @@
                 Sanjay Selvaraj
                 </h1>
 
-                <div class="home-content__button">
-                    <a href="#about" class="smoothscroll btn btn-animatedbg">
-                        More About Me
-                    </a>
-                </div>
+
+                  <button onclick="openWin()" class="button"><span>Download CV  </span></button>
 <!--
                 <div class="home-content__video">
                     <a class="video-link" href="https://player.vimeo.com/video/117310401?color=01aef0&title=0&byline=0&portrait=0" data-lity>
                         <span class="video-icon"></span>
                         <span class="video-text">Play Video</span>
-                    </a>
+                    </a>class="smoothscroll btn btn-animatedbg"
                 </div>
 -->
             </div> <!-- end home-content__main -->
