@@ -30,7 +30,6 @@
     <link rel="icon" href="favicon.png" type="image/x-icon">
     <style>
 .button {
-  border-radius: 4px;
   background-color: Transparent;
   border: 1px solid black;
   border-color: #f26522;
@@ -41,6 +40,21 @@
   padding: 20px;
   width: auto;
   height: 25px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button:active,.button:focus {
+  background-color: Transparent;
+  border: 1px solid black;
+  border-color: #f26522;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Montserrat",sans-serif;
+  padding: 20px;
+  width: auto;
+  height: auto;
   transition: all 0.5s;
   cursor: pointer;
   margin: 5px;
@@ -84,6 +98,9 @@
 <script>
 function openWin() {
   window.open("https://drive.google.com/file/d/13dyelAOkp45xp5_DJ-imEaPQS_uD7qH_/view");
+}
+function openPro1(){
+  window.open("https://github.com/saanjaay/Insulin_Pump_App");
 }
 </script>
 
@@ -291,11 +308,11 @@ function openWin() {
             <div class="col-block item-service" data-aos="fade-up">
                 <h4>Innovation Managment</h4>
                 <p>
-                Will be able to mingle with my fellow teammates and can successly complete
+                I can follow all the Innovation Managment principles and efficiently mingle with my teammates and  build product/prototype within a given time.
                 </p>
             </div>
 
-            <div class="col-block item-service" data-aos="fade-up">
+  <!--          <div class="col-block item-service" data-aos="fade-up">
                 <h4>UI/UX Design</h4>
                 <p>
                 Sit ut cum molestiae. Dolore ducimus qui quasi. Fugiat consequatur sit vel illum vel et
@@ -312,7 +329,7 @@ function openWin() {
                 asperiores est commodi amet quia architecto. Dolores necessitatibus et.
                 </p>
             </div>
-
+-->
         </div> <!-- end services-list -->
 
     </section> <!-- end s-services -->
@@ -337,24 +354,25 @@ function openWin() {
             <div class="col-block item-folio" data-aos="fade-up">
 
                 <div class="item-folio__thumb">
-                    <a href="images/portfolio/gallery/g-lamp.jpg" class="thumb-link" title="Lamp" data-size="1050x700">
+                    <a  class="thumb-link"title="Android App" data-size="1050x700">
                         <img src="images/portfolio/lamp.jpg"
-                             srcset="images/portfolio/lamp.jpg 1x, images/portfolio/lamp@2x.jpg 2x" alt="">
+                          >
                     </a>
                 </div>
 
                 <div class="item-folio__text">
                     <h3 class="item-folio__title">
-                        Lamp
+                        Smart Flow - Insulin Pump
                     </h3>
                     <p class="item-folio__cat">
-                        Web Design
+                        Application Development
                     </p>
                 </div>
+                <button onclick="openPro1()" class="item-folio__project-link"><span>Project Link </span></button>
 
-                <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
+              <!--  <a href="https://www.behance.net/" class="item-folio__project-link" title="Project link">
                     Project Link
-                </a>
+                </a>-->
 
                 <div class="item-folio__caption">
                     <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
