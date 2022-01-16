@@ -1,0 +1,15 @@
+.intro{
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 10rem;
+    margin-left: 1.75rem;
+    font-size: 1.75rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 3.5rem;
+}
