@@ -8,6 +8,9 @@
     line-height: inherit;
     white-space: nowrap;
 }
+.bg-light {
+    background-color: #ebebeb!important;
+}
 
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0.5rem;

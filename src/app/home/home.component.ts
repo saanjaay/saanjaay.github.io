@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     $(function() {
-      setTimeout(function() { $("#welcome").fadeOut(1500); }, 2500)
+    setTimeout(function() { $("#welcome").slideToggle("fast") }, 2000)
       })
   }
   
