@@ -14,6 +14,9 @@ export class HomeComponent implements OnInit {
     $(function() {
     setTimeout(function() { $("#welcome").slideToggle("fast") }, 2000)
       })
+    $(function() {
+        setTimeout(function() { $("#profilephoto").show }, 2000)
+          })
   }
   
 
