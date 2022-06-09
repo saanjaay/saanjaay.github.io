@@ -1,19 +1,9 @@
 <!-- Image and text -->
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     
 </head>
-<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <img class ="" src="../assets/IMG_5322.JPG  " width="100"  class="d-inline-block align-top" alt="sanjay's img">
-    <a class="navbar-brand intro" href="/home">
-     Sanjay    
-    </a>
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-        <a class="nav-link" href="home">Home</a>  
-      </li>
-    </ul>
-  </nav> -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <img src="../assets/IMG_5322.JPG  "  class=" profilepicture d-inline-block align-top" alt="sanjay's img"> 
     <div class="col navbar-brand intro">
     <div class="row"><div class="" href="/home">
@@ -22,7 +12,7 @@
     </div>
     <div class="row">
       <div class="title" href="/home">
-      Photographer
+      Photography Portfolio  
       </div>
       <div class="camicon">
       <svg xmlns="http://www.w3.org/2000/svg"  width="22"  fill="currentColor" class="bi bi-camera2" viewBox="0 0 16 16">
@@ -32,16 +22,20 @@
     </div>
     </div>
     </div>
-    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
+        <li class="nav-item ">
           <a class="nav-link" href="home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="myportfolio">Showcase <span class="sr-only"></span></a>
         </li>
       </ul>
     </div>
-  </nav>
+  </nav> 
+  <div id="welcome" *ngIf="this.welcomeflag">Welcome!</div>
 <router-outlet></router-outlet>                         

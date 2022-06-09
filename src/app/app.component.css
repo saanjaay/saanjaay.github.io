@@ -28,6 +28,15 @@
 .camicon{
     margin: -4px 0 0 7px;
 }
+#welcome
+{
+     background:grey;
+     opacity: 2;
+     color:#fff;
+     padding:10px; 
+     text-align:center;
+    }
+
 /* desktop */
 @media only screen and (min-width: 768px){
 .profilepicture{
